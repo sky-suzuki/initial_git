@@ -1,0 +1,318 @@
+@charset "UTF-8"
+;html {
+  font-size: 100%;
+  font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+}
+body {
+  box-sizing: border-box;
+  color: #333;
+  font-size: 1rem;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+li {
+  list-style: none;
+}
+.menu_wrapper,
+.about_wrapper,
+.location_wrapper {
+  max-width: 1000px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+h3, dl, p, a {
+  color:black;
+}
+/*////////////////////////ヘッダー/////////////////////////////////*/
+#header {
+  width: 100%;
+  min-height: 100vh;
+  margin-bottom: 20px;
+}
+.head_visual img {
+  width: 100%;
+  height: 735px;
+  object-fit: cover;
+}
+.head_visual {
+  position: relative;
+}
+.navi {
+  position: absolute;
+  top: 23px; left: 1250px;
+}
+.navi_list {
+  display: flex;
+  justify-content: right;
+}
+.navi_list li {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-right: 25px;
+}
+.navi_list a {
+  color: #fff;
+  font-weight: bold;
+  transition: all  0.3s ease;
+  filter: drop-shadow(1px 1px 2px #121212);
+}
+nav li a:hover {
+  color: #e03131;
+}
+.head_title {
+  color: #fff;
+  font-size: 6.9rem;
+  letter-spacing: 1.5px;
+  position: absolute;
+  top: 300px; left: 530px;
+}
+/*/////////////////////メイン//////////////////////////////////////*/
+
+/*/////////////////////メニュー//////////////////////////////////////*/
+#menu {
+  width: 100%;
+  margin: 0 auto 20px 0
+}
+.menu_visual {
+  width: 100%;
+  height: 280px;
+  background-image: url(https://source.unsplash.com/random);
+  object-fit: cover;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-bottom: 78px;
+}
+.menu_title {
+  color: #fff;
+  font-size: 4.4rem;
+  letter-spacing: 1.5px;
+  position: absolute;
+  top: 85px; left: 645px;
+}
+.item_title {
+  display: inline-block;
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+  border-bottom: solid 5px red;
+  margin-bottom: 70px;
+}
+.item_title_other {
+  display: inline-block;
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+  border-bottom: solid 5px red;
+  margin: 20px;
+}
+.menu_wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.menu_item_1 {
+  text-align: center;
+  width: 45%;
+  position: relative;
+}
+.menu_item_1:after {
+  margin: 0 1rem;
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+  top: 0px; left: 100%;
+
+}
+.menu_item_2 {
+  text-align: center;
+  width: 45%;
+}
+dt {
+  font-size: 0.9rem;
+  text-align: left;
+  border-bottom: black dotted 1px;
+}
+dd {
+  font-size: 0.9rem;
+  text-align: right;
+  margin-bottom: 10px;
+}
+.item_3 dt {
+  margin-top: 45px;
+}
+
+/*/////////////////////アバウト//////////////////////////////////////*/
+#about {
+  width: 100%;
+  margin: 0 auto 20px 0; 
+  text-align: center;
+}
+.about_visual {
+    width: 100%;
+    height: 280px;
+    background-image: url(https://source.unsplash.com/random);
+    object-fit: cover;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: 78px;
+}
+.about_title {
+  color: #fff;
+  font-size: 4.4rem;
+  letter-spacing: 1.5px;
+  position: absolute;
+  top: 85px; left: 645px;
+}
+.item_title_coffee {
+  display: inline-block;
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+  border-bottom: solid 5px red;
+  margin-bottom: 65px;
+  
+}
+.about_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 auto 55px auto;
+}
+.about_wrapper li {
+  font-size: 0.9rem;
+  padding: 15px;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+.about_list_1 {
+  width: 50%;
+}
+.about_list_2 {
+  width: 50%;
+}
+.about_list_3 {
+  width: 50%;
+}
+.about_list_4 {
+  width: 50%;
+}
+#about .btn {
+  width: 160px;
+  height: 50px;
+  line-height: 52px;
+  display: inline-block;
+  color: #000;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+#about .btn span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#about .btn:before,
+#about .btn:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #e03131;
+  transition: all 0.3s ease;
+}
+#about .btn span:before,
+#about .btn span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #e03131;
+  transition: all 0.3s ease;
+}
+#about .btn:before,
+#about .btn span:before {
+  width: 2px;
+  height: 50%;
+}
+#about .btn:after,
+#about .btn span:after {
+  width: 20%;
+  height: 2px;
+}
+#about .btn:hover:before,
+#about .btn span:hover:before {
+  height: 100%;
+}
+#about .btn:hover:after,
+#about .btn span:hover:after {
+  width: 100%;
+}
+/*/////////////////////ロケーション//////////////////////////////////////*/
+#location {
+    width: 100%;
+    margin: 0 auto 20px 0; 
+    text-align: center;
+}
+.location_visual {
+  width: 100%;
+    height: 280px;
+    background-image: url(https://source.unsplash.com/random);
+    object-fit: cover;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: 78px;
+}
+.location_title {
+    color: #fff;
+    font-size: 4.4rem;
+    letter-spacing: 1.5px;
+    position: absolute;
+    top: 85px; left: 565px;
+}
+.location_wrapper {
+  padding: 0;
+  margin: 0 auto 200px auto;
+}
+.item_title_our_store {
+  display: inline-block;
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+  border-bottom: solid 5px red;
+  margin-bottom: 65px;
+}
+.location_map {
+  color: #3f3f3f;
+}
+.access {
+  text-align: left;
+}
+.access p {
+  font-size: 0.8rem;
+  padding: 2px;
+  
+}
+/*////////////////////フッター//////////////////////////////////////*/
+footer {
+  text-align: center;
+  font-size: 0.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .head_visual  {
+    position: absolute;
+  }
+  .navi_list {
+
+  }
+ img {
+   width: 100%;
+ }
+  }
